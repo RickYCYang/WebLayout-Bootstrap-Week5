@@ -6,50 +6,197 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <!-- Material Icon CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <a href="#" class="logo"></a>
-                <ul class="list-unstyled">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
-            <div class="user">
-                <img src="" alt="">
+    <div class="d-flex justify-content-between">
+        <nav class="w-25 bg-gray p-5 d-flex flex-column justify-content-between">
+            <ul class="list-unstyled fs-6 fw-bold">
+                <a href="#" class="d-block h-40p mb-4 logo"></a>
+                <li class="mb-4 d-flex align-items-center cursor-pointer"><span class="material-icons md-24 me-3">bar_chart</span>Dashboard</li>
+                <li class="mb-4 d-flex align-items-center cursor-pointer"><span class="material-icons md-24 me-3">message</span>Question</li>
+                <li class="mb-4 d-flex align-items-center cursor-pointer"><span class="material-icons md-24 me-3">assignment</span>Assignment</li>
+                <li class="mb-4 d-flex align-items-center cursor-pointer"><span class="material-icons md-24 me-3">pets</span>Course</li>
+                <li class="mb-4 d-flex align-items-center cursor-pointer text-success "><span class="material-icons md-24 me-3">account_box</span>Admin</li>
+                <li class="mb-4 d-flex align-items-center cursor-pointer"><span class="material-icons md-24 me-3">settings</span>Settings</li>
+            </ul>
+            <div class="d-flex">
+                <img class="d-block w-40p h-40p rounded-circle me-3" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="">
                 <div class="">
-                    <h3></h3>
-                    <p></p>
+                    <p class="fs-6 fw-bold mb-4p">Andy Chen</p>
+                    <p class="text-secondary lh-1 fs-7">andy0401@mail.com</p>
                 </div>
             </div>
-        </header>
-        <main>
-            <section class="header">
-                <div class="">
-                    <h2></h2>
-
+        </nav>
+        <main class="w-75 p-5">
+            <section class="d-flex justify-content-between mb-5">
+                <div class="d-flex align-items-center">
+                    <h2 class="fs-5 mb-0 me-5">Admin</h2>
+                    <p class="fs-6 d-flex align-items-center mb-0 cursor-pointer"><span class="material-icons md-24 me-1 text-success">add</span>Add New Admin</p>
                 </div>
-                <div class="tooltip">
-                    <i></i>
-                    <i></i>
-                </div>
+                <ul class="d-flex list-unstyled mb-0">
+                    <li><span class="material-icons md-24 me-4">search</span></li>
+                    <li><span class="material-icons md-24">notifications</span></li>
+                </ul>
             </section>
-            <section>
-                <table></table>
+            <section class="mb-5">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID<span class="material-icons md-12 text-success ms-1">arrow_downward</span></th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Verified</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3">#1</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#2</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#3</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#4</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#5</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#6</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#7</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#8</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#9</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">#10</td>
+                            <td class="py-3">Emir Wicks</td>
+                            <td class="py-3">emir.wicks@mail.com</td>
+                            <td class="py-3">Yes</td>
+                            <td class="py-3">
+                                <span class="material-icons mx-2 cursor-pointer" data-bs-toggle="modal" data-bs-target="#userModal">remove_red_eye</span>
+                                <span class="material-icons mx-2 cursor-pointer">edit</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-            <section>
-
+            <section class="d-flex justify-content-end">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </nav>
             </section>
         </main>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered w-480p h-205p">
+            <div class="modal-content p-4">
+                <div class="modal-body d-flex justify-content-between">
+                    <img class="d-block w-141p h-141p" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true" />
+                    <div>
+                        <p class="fs-6 mb-1">#1</p>
+                        <p class="fs-6 text-secondary mb-0">Admin</p>
+                        <p class="fs-5 mb-1">Emir Wicks</p>
+                        <p class="fs-7 text-secondary mb-2">emir.wicks@mail.com</p>
+                        <p class="fs-7 text-secondary">verified</p>
+                    </div>
+                    <button type="button" class="btn-close w-5p h-5p" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

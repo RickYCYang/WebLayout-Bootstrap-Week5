@@ -1,3 +1,79 @@
+.material-icons.md-12 { font-size: 12px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.w-5p {
+    width: 5px;
+}
+
+.w-40p {
+    width: 40px;
+}
+
+.w-141p {
+    width: 141px;
+}
+
+.w-480p {
+    width: 480px;
+}
+
+.h-5p {
+    height: 5px;
+}
+
+.h-40p {
+    height: 40px;
+}
+
+.h-141p {
+    height: 141px;
+}
+
+.h-150p {
+    height: 150px;
+}
+
+.h-205p {
+    height: 205px;
+}
+
 .logo {
     background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg");
+    background-repeat: no-repeat;
+}
+
+.bg-gray {
+    background-color: #F8F9FA;
+}
+
+.fs-7 {
+    font-size: 14px;
+}
+
+.mb-4p {
+    margin-bottom: 4px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.pagination > li > a
+{
+    color: #000000;
+    border: #198754 1px solid;
+}
+
+.pagination > li > a > span
+{
+    color: #198754;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #198754 !important;
 }
